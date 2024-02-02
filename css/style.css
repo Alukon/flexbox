@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.main-menu{
+    background: yellow;
+}
+.main-menu ul li{
+    display: inline-block;
+}
+
+.response-menu{
+/*    display: none;*/
+    position: absolute;
+    width: 250px;
+    background: green;
+    left: -228px;
+    top: 0;
+    bottom: 0;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+.response-menu:before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../img/menu.png');
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.response-menu:hover{
+    left: 0;
+}
+
+@media screen and (max widht: 800px){
+    .response-menu{
+        display: block;
+    }
+    .main-menu{
+        display: none;
+    }
+}
+
