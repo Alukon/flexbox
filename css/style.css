@@ -1,0 +1,38 @@
+.unit_Left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    position: fixed;
+    border: solid 1px;
+    width: 38%;
+    height: 100%;
+}
+
+.parent{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    border: solid 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: 500px;
+}
+
+.child{
+    font-size: 60px;
+    border: solid 1px;
+    width: 100%;
+/*    height: 20%;*/
+/*    align-self: stretch;*/
+    align-content:center;
+}
+
+/*
+.child-active{
+    background: red;
+    order: -1;
+    align-self: stretch;
+}
+*/
